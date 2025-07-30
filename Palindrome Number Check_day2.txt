@@ -1,0 +1,12 @@
+
+int num = 121;
+int original = num;
+int reversed = 0;
+
+while (num > 0) {
+    reversed = reversed * 10 + num % 10;
+    num /= 10;
+}
+
+System.out.println(original == reversed ? "Palindrome" : "Not Palindrome");
+
